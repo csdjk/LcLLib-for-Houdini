@@ -1,0 +1,11 @@
+{
+    "env": [
+        {
+            "LibPath": "E:/HoudiniProjects/libs",
+        },
+    ],
+    "package_path" : [
+        "$LibPath/packages",
+        "$LibPath/LcLLib-for-Houdini/packages",
+    ],
+}

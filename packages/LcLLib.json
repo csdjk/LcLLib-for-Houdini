@@ -1,0 +1,53 @@
+{
+    "load_package_once": true,
+    "path": [
+        {        
+            "value" : "$LibPath/LcLLib-for-Houdini",
+            "method" : "prepend",
+        },
+    ],
+    "env": [
+        {
+            "LcLLib": "$LibPath/LcLLib-for-Houdini"
+        },
+        {
+            "HOUDINI_SCRIPT_PATH": {
+                "method": "prepend",
+                "value": [
+                    "$LcLLib/scripts",
+                ]
+            }
+        },
+        {
+            "HOUDINI_OTLSCAN_PATH": {
+                "method": "append", 
+                "value": [
+                    "$LcLLib/otls/geo",
+                    "$LcLLib/otls/grass",
+                    "$LcLLib/otls/road",
+                    "$LcLLib/otls/rock",
+                    "$LcLLib/otls/terrain",
+                    "$LcLLib/otls/tools",
+                    "$LcLLib/otls/track",
+                    "$LcLLib/otls/tree",
+                ]
+            }
+        },
+        {
+            "HOUDINI_VEX_PATH": {
+                "method": "append", 
+                "value": [
+                    "$LcLLib/vex/^",
+                ]
+            }
+        },
+        {
+            "HOUDINI_OCL_PATH": {
+                "method": "append", 
+                "value": [
+                    "$LcLLib/ocl",
+                ]
+            }
+        },
+    ],
+}
