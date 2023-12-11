@@ -22,6 +22,8 @@
             "HOUDINI_OTLSCAN_PATH": {
                 "method": "append", 
                 "value": [
+                    "$LcLLib/otls",
+                    "$LcLLib/otls/color",
                     "$LcLLib/otls/geo",
                     "$LcLLib/otls/grass",
                     "$LcLLib/otls/road",
@@ -29,7 +31,7 @@
                     "$LcLLib/otls/terrain",
                     "$LcLLib/otls/tools",
                     "$LcLLib/otls/track",
-                    "$LcLLib/otls/tree",
+                    "$LcLLib/otls/tree"
                 ]
             }
         },

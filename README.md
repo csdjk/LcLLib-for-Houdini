@@ -105,17 +105,19 @@
 
 ## 3. LcLLib-for-Houdini 的HDA节点
 
-### [无缝FFT海水](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/tools)
+### [LcL Water Wave Tools](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/tools)
 
 `HDA:   water_wave`
 
 用于创建无缝FFT海水，可以通过修改参数来调整海水的大小、波长、波高、波速、波向、波的数量等。
-支持导出序列帧高度图。
+支持导出序列帧法线贴图。
 
 ![1693818175779](image/README/1693818175779.gif)
 
+合成后的法线贴图（8x8）
+![1693904688049](image/README/1693904688049.png)
 
-### [Noise Creator](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/tools)
+### [LcL Noise Creator](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/tools)
 
 `HDA:  noise_creator`
 
@@ -123,3 +125,14 @@
 
 ![1693828818467](image/README/1693828818467.png)
 
+### [LcL Gpa Data Importer](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/tools)
+
+GPA截帧数据导入器，用于把GPA导出的CSV数据写入FBX中，例如uv、法线、顶点颜色等。
+原本GPA导出的obj是没有uv等数据的。
+
+csv文件格式：
+![1693971844222](image/README/1693971844222.png)
+
+写入FBX后的效果：
+
+![1693972063318](image/README/1693972063318.png)
