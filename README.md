@@ -4,7 +4,7 @@
 
 ## 1. Houdini 自定义库安装教程
 
-这里以我的自定义库`LcLLib-for-Houdini`为例。
+这里以我的自定义库 `LcLLib-for-Houdini`为例。
 
 1. 创建一个LcL.json文件，并将其放在Houdini的库文件夹中，例如:`C:\Users\Administrator\Documents\houdini19.0\packages`
 2. 在LcL.json文件中添加以下内容：
@@ -26,7 +26,7 @@
 - `LibPath`为自定义库的路径。
 - `package_path`为自定义库的子文件夹路径，可以有多个。
 
-3. 在自定义库的packages文件夹中创建`LcLLib.json`文件
+3. 在自定义库的packages文件夹中创建 `LcLLib.json`文件
 
 ![1693812474066](image/README/1693812474066.png)
 
@@ -37,7 +37,7 @@
 {
     "load_package_once": true,
     "path": [
-        {        
+        {      
             "value" : "$LibPath/LcLLib-for-Houdini",
             "method" : "prepend",
         },
@@ -136,3 +136,25 @@ csv文件格式：
 写入FBX后的效果：
 
 ![1693972063318](image/README/1693972063318.png)
+
+### [lcl_scater_non_overlapping](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/particle)
+
+不重叠撒点，在 `scatter align` 节点基础上封装，剔除了重叠的Point
+
+![1704784939634](image/README/1704784939634.png)
+
+### [lcl_meteorite_scatter](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/particle)
+
+陨石分布
+
+![1704786399736](image/README/1704786399736.png)
+
+### [lcl_import_volume_texture](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/volume)
+
+导入3D Texture序列，转成Volume
+
+
+<div style="display: flex;">
+  <img src="./image/README/1704787356247.png" style="flex: 1; width: auto; " />
+  <img src="./image/README/1704787556062.png" style="flex: 1; width: auto; " /> 
+</div>

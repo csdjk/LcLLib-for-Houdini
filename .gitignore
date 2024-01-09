@@ -3,3 +3,4 @@
 *.pyc
 *.ini
 __pycache__
+/.history/
