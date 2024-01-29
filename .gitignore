@@ -4,3 +4,4 @@
 *.ini
 __pycache__
 /.history/
+/.vscode/

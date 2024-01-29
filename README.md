@@ -153,8 +153,20 @@ csv文件格式：
 
 导入3D Texture序列，转成Volume
 
+![1704787356247](image/README/1704787356247.png)|![1704787556062](image/README/1704787556062.png)
+---|---
 
-<div style="display: flex;">
-  <img src="./image/README/1704787356247.png" style="flex: 1; width: auto; " />
-  <img src="./image/README/1704787556062.png" style="flex: 1; width: auto; " /> 
-</div>
+## 石头生成工具
+
+### [lcl_rock_generator_low](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/rock)
+
+![1706519960942](image/README/1706519960942.png)
+![1706522527711](image/README/1706522527711.gif)
+
+### [lcl_rock_generator_complex](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/rock)
+
+![1706521940141](image/README/1706521940141.gif)
+
+### [lcl_rock_generator_high](https://github.com/csdjk/LcLLib-for-Houdini/tree/main/otls/rock)
+
+![1706522225385](image/README/1706522225385.gif)
