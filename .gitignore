@@ -1,7 +1,11 @@
 ﻿
 **/backup
+**/maps
 *.pyc
 *.ini
+*.exr
+*.pic
+*.rat
 __pycache__
 /.history/
 /.vscode/
