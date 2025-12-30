@@ -13,17 +13,17 @@
 {
     "env": [
         {
-            "LibPath": "F:/HoudiniProjects/libs"
+            "LCLLibPath": "F:/HoudiniProjects/libs"
         }
     ],
     "package_path" : [
-        "$LibPath/packages",
-        "$LibPath/LcLLib-for-Houdini/packages"
+        "$LCLLibPath/packages",
+        "$LCLLibPath/LcLLib-for-Houdini/packages"
     ]
 }
 ```
 
-- `LibPath`为自定义库的路径。
+- `LCLLibPath`为自定义库的路径。
 - `package_path`为自定义库的子文件夹路径，可以有多个。
 
 3. 在自定义库的packages文件夹中创建 `LcLLib.json`文件
@@ -38,13 +38,13 @@
     "load_package_once": true,
     "path": [
         {      
-            "value" : "$LibPath/LcLLib-for-Houdini",
+            "value" : "$LCLLibPath/LcLLib-for-Houdini",
             "method" : "prepend",
         },
     ],
     "env": [
         {
-            "LcLLib": "$LibPath/LcLLib-for-Houdini"
+            "LcLLib": "$LCLLibPath/LcLLib-for-Houdini"
         },
         {
             "HOUDINI_SCRIPT_PATH": {

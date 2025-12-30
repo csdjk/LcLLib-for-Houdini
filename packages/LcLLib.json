@@ -2,19 +2,19 @@
     "load_package_once": true,
     "path": [
         {        
-            "value" : "$LibPath/LcLLib-for-Houdini",
-            "method" : "prepend",
-        },
+            "value" : "$LCLLibPath/LcLLib-for-Houdini",
+            "method" : "prepend"
+        }
     ],
     "env": [
         {
-            "LcLLib": "$LibPath/LcLLib-for-Houdini"
+            "LcLLib": "$LCLLibPath/LcLLib-for-Houdini"
         },
         {
             "HOUDINI_SCRIPT_PATH": {
                 "method": "prepend",
                 "value": [
-                    "$LcLLib/scripts",
+                    "$LcLLib/scripts"
                 ]
             }
         },
@@ -39,7 +39,7 @@
             "HOUDINI_VEX_PATH": {
                 "method": "append", 
                 "value": [
-                    "$LcLLib/vex/^",
+                    "$LcLLib/vex/^"
                 ]
             }
         },
@@ -47,9 +47,9 @@
             "HOUDINI_OCL_PATH": {
                 "method": "append", 
                 "value": [
-                    "$LcLLib/ocl",
+                    "$LcLLib/ocl"
                 ]
             }
-        },
-    ],
+        }
+    ]
 }
